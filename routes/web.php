@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 })->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
